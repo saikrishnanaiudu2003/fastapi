@@ -33,11 +33,12 @@ This project demonstrates user authentication (registration and login) using Fas
 
     - **Register User**
 
-      **Endpoint:** `/register`  
+      **Endpoint:** `/auth/register`  
       **Method:** `POST`  
       **Request Body:**
       ```json
       {
+        "email":"user@email.com"
         "username": "user1",
         "password": "password123"
       }
@@ -51,12 +52,12 @@ This project demonstrates user authentication (registration and login) using Fas
 
     - **Login User**
 
-      **Endpoint:** `/login`  
+      **Endpoint:** `/auth/login`  
       **Method:** `POST`  
       **Request Body:**
       ```json
       {
-        "email":"user@email.com"
+       
         "username": "user1",
         "password": "password123"
       }
